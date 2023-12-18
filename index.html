@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index CRUD Example</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="boot.css">
+    <!--common.css  -->
+    <link rel="stylesheet" href="style.css">
+    <style> 
+        /* Increase the font size for the entire page */
+        body {
+            font-size: 18px;
+        }
+        
+        .navbar-custom {
+            background-color: grey;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: black;
+        }
+        .navbar-nav {
+            justify-content: center;
+        }
+        /* Center the "About us" section */
+        .center-about-us {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="./js/bootstrap.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2 " href="#">Golden Grain Exchange</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: black">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="select.php">Database</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="update.php">For Factory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="For_Delivery.php">For Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="insert.php">For Farmer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="delete.php">Delete</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text" href="shop.php">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navbar-text" href="completed_orders.php">Check Completed Orders</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-header" style="background-image: url('./Assets/ricefield.png')">
+        <div class="header">
+            <h1 class="display-2">GoldenGrainExchange</h1>
+            <p class="lead">Highest Quality Rice Exchange.</p>
+        </div>
+    </div>
+
+    <!--main content-->
+    <div class="container mb-4 mt-4">
+        <div class="row justify-content-center"> <!-- Center the content -->
+            <div class="col-md-8 col-sm-12 mb-3 center-about-us"> <!-- Added col-sm-12 and center-about-us class -->
+                <h2>About us</h2>
+                <hr>
+                <p>We are a dedicated platform specializing in a comprehensive rice database system, providing farmers, buyers, and industry stakeholders with valuable insights and information on rice varieties, pricing, and market trends.</p>
+                <p>Our mission is to empower the rice community with data-driven solutions for informed decision-making in the dynamic world of rice cultivation and trade.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--3 cards-->
+    <div class="container-fluid mb-4">
+        <div class="row bg-light p-md-5">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Assets/story.png" alt="">
+                    <div class="card-body">
+                        <h3>Our story</h3>
+                        <p>Our story revolves around the idea of creating a community where farmers and customers can come together to purchase and enjoy delicious rice. We believe in providing quality products that are sustainably sourced and ethically produced, so you can be sure that you are getting the best product available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Assets/business.png" alt="">
+                    <div class="card-body">
+                        <h3>Our vision</h3>
+                        <p>At Golden Grain Exchange, our vision is to create a better, more sustainable food system for everyone. We are committed to connecting farmers with customers in order to bring the freshest, highest quality rice to your table. By cutting out the middleman, we are able to make sure that farmers are getting the best price for their product and that customers are getting the best quality for their money. Every grain counts, and we are proud to be part of the solution.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="./Assets/our_tech.png" alt="">
+                    <div class="card-body">
+                        <h3>Our technology</h3>
+                        <p>Our state-of-the-art technology helps us to ensure that each grain of rice is of the highest quality, and that farmers are able to get a fair price for their product. We are passionate about helping to bridge the gap between farmers and customers, and we invite you to join us on this journey and experience the difference.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5>Contact Information</h5>
+                  <p>Email: GoldenGrainExchange@gmail.com</p>
+                  <p>Phone: (123) 456-7890</p>
+              </div>
+              <div class="col-md-6">
+                  <h5>Follow Us</h5>
+                  <a href="#" class="text-white">Facebook</a><br>
+                  <a href="#" class="text-white">Twitter</a><br>
+                  <a href="#" class="text-white">Instagram</a>
+              </div>
+          </div>
+          <div class="row mt-3">
+              <div class="col">
+                  <!-- Add your logo image here -->
+                  <img src="./Assets/logo_new.png" alt="GoldenGrainExchange Logo" style="max-width: 100px;">
+                  <p>&copy; 2023 GoldenGrainExchange. All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
